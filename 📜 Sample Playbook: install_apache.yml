@@ -1,0 +1,23 @@
+#vim install_apache.yml (add below lines in this yml)
+
+---
+- name: Install Apache on Worker Nodes
+  hosts: all
+  become: true
+  tasks:
+    - name: Ensure Apache2 is installed
+      apt:
+        name: apache2
+        state: present
+        update_cache: yes
+
+    - name: Ensure Apache2 is running
+      service:
+        name: apache2
+        state: started
+        enabled: yes
+
+save this file :wq!
+
+▶️ Run the Playbook
+#ansible-playbook -i inventory.ini install_apache.yml
