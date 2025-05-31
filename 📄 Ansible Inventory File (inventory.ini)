@@ -1,0 +1,9 @@
+1. create directory where you want to work
+# mkdir -p /home/ubuntu/ansible
+
+2. create inventory file #vim inv  
+add below content 
+[all]
+<worker node ip>
+
+3. save this file 
