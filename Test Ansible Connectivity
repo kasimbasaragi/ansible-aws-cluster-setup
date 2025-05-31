@@ -1,0 +1,9 @@
+#ansible -i inv all -m ping
+
+output should be
+
+worker1 | SUCCESS => {
+    "changed": false,
+    "ping": "pong"
+}
+ 
