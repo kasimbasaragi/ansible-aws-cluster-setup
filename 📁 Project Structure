@@ -1,0 +1,4 @@
+ansible-aws-cluster-setup/
+├── inventory.ini
+├── install_apache.yml
+├── README.md
