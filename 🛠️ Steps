@@ -1,0 +1,9 @@
+1. 🛠️ Install Ansible
+sudo apt update
+sudo apt install -y ansible
+
+2. 🔐 Generate SSH Key on Master
+ssh-keygen -t rsa
+
+2. 🚀 Copy SSH Key to Worker Nodes
+ssh-copy-id -i ~/.ssh/id_rsa.pub ubuntu@<worker-private-ip>
