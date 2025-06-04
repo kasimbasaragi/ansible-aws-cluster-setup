@@ -3,3 +3,4 @@ SSH into a worker node and run:
 apache2 -v
 systemctl status apache2
 
+
